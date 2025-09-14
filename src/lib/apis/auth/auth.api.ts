@@ -62,7 +62,7 @@ export async function logout() {
 
 /** ====== Profile update ====== */
 export async function updateMyName(name: string) {
-	return apiFetch<User>('/api/v1/users/me', {
+	return apiFetch<User>('/api/v1/user/me', {
 		method: 'PATCH',
 		data: { name },
 	});
