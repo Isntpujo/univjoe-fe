@@ -32,9 +32,9 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
 	if (isCheckingAuth) return null;
 
 	return (
-		<div>
-			{children}
+		<>
+			<main className="w-full h-dvh">{children}</main>
 			<Toaster position="top-right" />
-		</div>
+		</>
 	);
 }
