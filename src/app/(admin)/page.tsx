@@ -9,8 +9,8 @@ export const metadata: Metadata = {
 
 export default function Home() {
   return (
-    <div className='flex flex-col justify-center items-center w-full h-full gap-6'>
-      <h1>Welcome to home page CRUD Project</h1>
+    <div className='flex flex-col justify-center items-center w-full h-full gap-6 bg-neutral-900'>
+      <h1 className='text-white'>Welcome to home page CRUD Project</h1>
       <Link href='/profile'>
         <Button variant='primary'>Go to Profile</Button>
       </Link>
